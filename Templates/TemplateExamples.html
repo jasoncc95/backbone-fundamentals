@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Template Examples</title>
+		<script type="text/javascript" src="../jquery-3.6.3.js"></script>
+		<script type="text/javascript" src="../underscore-umd.js"></script>
+		<script type="text/javascript" src="../backbone.js"></script>
+		<script type="text/javascript" src="../handlebars-v4.7.7.js"></script>
+	</head>
+	<body>
+		<div id="example"></div>
+		<div id="example2">
+			<script id="latlon-template" type="text/html">
+				<p>Latitude: <%= lat %></p>
+				<p>Longitude: <%= lon %></p>
+				<% _([1, 2, 3]).each(function(number) { %>
+					<p><%= number%></p>
+				<% }); %>
+			</script>
+		</div>
+	</body>
+	<script type="text/javascript" src="TemplateExamples.js"></script>
+</html>
